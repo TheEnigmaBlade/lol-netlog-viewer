@@ -691,9 +691,6 @@ public class NetlogViewerUI extends JFrame
 		chart.getXYPlot().setDomainAxis(domainAxis);
 		chartPanel.setChart(chart);
 		
-		fileDropOverlay = new WebPanel();
-		fileDropOverlay.setOpaque(false);
-		fileDropOverlay.setFocusable(true);
 		chartOverlayPanel.addOverlay(fileDropOverlay);
 		
 		netlogList.setModel(netlogListModel = new DefaultListModel<>());
